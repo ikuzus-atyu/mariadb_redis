@@ -1,0 +1,19 @@
+services:
+  storages:
+    image: mariadb-redis
+    build:
+      context: .
+    ports:
+      - '3306:3306'
+      - '6379:6379'
+    expose:
+      - 3306
+      - 6379
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    environment:
+      TZ: Asia/Tokyo
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hoge

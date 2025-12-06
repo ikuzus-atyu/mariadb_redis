@@ -1,5 +1,5 @@
 # mariadb-redis 
-merge mysql &amp; redis container.<br>
+merge mariadb &amp; redis container.<br>
 I created this repository for reducing resource usage on local machine.
 
 How to use
